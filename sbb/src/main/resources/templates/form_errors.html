@@ -1,0 +1,6 @@
+/* 오류 메시지를 표시하는 공통 템플릿. question_form, question_detail에 적용되어있음 */
+
+<div th:fragment="formErrorsFragment" class="alert alert-danger" 
+    role="alert" th:if="${#fields.hasAnyErrors()}">
+    <div th:each="err : ${#fields.allErrors()}" th:text="${err}" />
+</div>

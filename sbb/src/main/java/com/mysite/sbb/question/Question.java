@@ -15,7 +15,7 @@ import jakarta.persistence.OneToMany;
 
 import lombok.Getter; 
 import lombok.Setter; 
-// 바꿈
+
 @Getter 
 @Setter 
 @Entity 

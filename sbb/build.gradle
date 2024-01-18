@@ -43,7 +43,10 @@ dependencies {	// 라이브러리를 설치하면 다양한 애너테이션 사�
 	
 	// Spring Boot Validation : 사용자로부터 입력받은 값을 검증할 때 사용. 질문이나 답변에 빈 값을 입력하지 않도록.
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
-
+	
+	// 스프링 시큐리티 : 스프링 기반 웹 애플리케이션의 인증과 권한 담당하는 하위 프레임워크. 회원가입과 로그인 기능에 사용
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 }
 
 tasks.named('test') {
